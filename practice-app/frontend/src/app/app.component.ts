@@ -7,7 +7,10 @@ import {HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practice-app';
-  messages = this.http.get<any[]>('http/localhost:4201');
+
+  //messages = this.http.get<any[]>('http/localhost:4201');
+
   constructor(private http: HttpClient) {}
+
+  
 }

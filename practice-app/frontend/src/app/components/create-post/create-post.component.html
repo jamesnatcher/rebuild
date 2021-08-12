@@ -1,0 +1,27 @@
+<div class="border-block" > 
+    <div class="post-create-block row">
+        <div *ngIf="!showAddTask" class="row">
+            <button class="btn btn-outline-info" (click)="toggleCreatePost()">{{ showAddTask ? 'Close' : 'Create Post'}}</button>
+        </div>
+        <div *ngIf="showAddTask" class="row justify-content-end" style="padding-right: 70px;">
+            <button class="btn btn-outline-danger col-2" style="white-space: nowrap; max-width: 108.66px; max-height: 38;" (click)="toggleCreatePost()">{{ showAddTask ? 'Close' : 'Create Post'}}</button>
+        </div>
+        <form *ngIf="showAddTask" class="row" style="margin: 10px;" (ngSubmit)="onSubmit()">
+            <div class="col">
+            </div>
+            <div class="text-post-block col-10">
+                <div style="color: rgb(240, 239, 239);">
+                    <div class="form-group">
+                        <input type="text" name="text" class="form-control" [(ngModel)]="title" id="title" placeholder="Title"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="body" class="form-control" [(ngModel)]="body" id="body" placeholder="Text" style="height: 100px;"/>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-outline-info col align-self-end" style="margin: 10px 0px 10px 10px;"/>
+            </div>  
+            <div class="col">
+            </div>
+        </form>
+    </div>
+</div>

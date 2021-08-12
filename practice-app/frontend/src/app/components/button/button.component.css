@@ -1,0 +1,26 @@
+ /* Style the links inside the navigation bar */
+ button {
+    margin: auto;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border: none;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Change the color of links on hover */
+  button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  button.active {
+    background-color: #2196F3;
+    color: white;
+  }

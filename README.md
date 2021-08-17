@@ -1,5 +1,5 @@
-# rebuild
-My new rebuild
+# Rebuild
+My rebuild of my Skimmit project
 
 In order to run, open file using IDE.
 
